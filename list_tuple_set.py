@@ -2,20 +2,20 @@ lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 lst_1 = [[1, 2, 3], [2, 1, 3], [4, 0, 1]]
 
 
-def get_second_half(obj: list):
+def get_second_half(obj: list) -> list:
     return obj[len(obj) // 2:]
 
 
-def move_last_three_elements_in_beginning(obj: list):
+def move_last_three_elements_in_beginning(obj: list) -> list:
     return obj[-3:] + obj[:-3]
 
 
-def sort_by_second_inner_element(obj: list):
+def sort_by_second_inner_element(obj: list) -> list:
     obj.sort(key=lambda x: x[1])
     return obj
 
 
-def safe_remove_element(obj: list, elem):
+def safe_remove_element(obj: list, elem) -> None:
     if elem in obj:
         obj.remove(elem)
 
